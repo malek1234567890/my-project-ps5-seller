@@ -1,0 +1,23 @@
+
+
+body{
+    background-color: rgb(207, 254, 212);
+}
+
+fieldset {
+    background-color: #FAFAFA;
+    border:2px dashed #8e4abb;
+    width: 70%;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+legend {
+    color: #a862d9;
+padding-left:  0.25cm;
+padding-right: 0.25cm;
+}
+
+button:hover{
+    background-color: #F4CCCC;
+}

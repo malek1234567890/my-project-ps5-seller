@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<style>
+    body {
+      background-image: url("https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg");
+    }
+  </style>
+<body>
+   <div>
+    <form>
+        <fieldset>
+            <legend>Commander une Playstation 5</legend>
+                <br>
+                <label>numero de telephone:<input  name="numero de telephone"  id="myNumberField"  /></label>
+                <br><br>
+                <label>numero de carte bancaire:<input  name="numero de telephone"  id="myNumberField"  /></label>
+                <br><br>
+
+                    <label>
+                        pays de residence : 
+                        <select name="salutation"  >
+                            <option>Tunisie</option>
+                            <option>Espagne</option>
+                            <option>France</option>
+                            <option>Italie</option>
+                            <option>Cameroun</option>
+                            <option>LIbye</option>
+                            <option>Allemeagne</option>
+                            <option>Algérie</option>
+                            <option>Maroc</option>
+                            <option>Turquie</option>
+                        </select>
+                    </label>
+                </label>
+                <br><br>
+
+                <label>Adresse email:<input type="text" name="Déstination" id="destination" />
+                  </label>
+                  <br><br>
+                <label>Date de reception du produit :
+                    <input type="date" name="Date" id="dateInput" min="" onchange="validateDateInput(this)">
+                  </label>
+                  <br><br>
+                  <label>Heure de reception du produit :
+                      <input type="time" name="Heure Depart" id="heuredepart" >
+                    </label>
+                    <br><br>
+
+                <br><br>
+                <button type="submit" id="myButton" >Commander</button>
+                <br><br>
+                <hr>
+                    <div>
+                        <p id="displayText" style="display: none;">Veuillez entrer un numero valide</p>
+                        <p id="displayText1" style="display: none;"> Choisir une date valide </p>
+                        <p id="displayText2" style="display: none;">Veuillez enter un pays</p>
+                        <p id="displayText3" style="display: none;">Veuillez choisir les horaires de reception</p>
+                        <p id="displayText4" style="display: none;">La date doit etre superieur à la date actuelle</p>
+                        <p id="displayText5" style="display: none;">Le temps d'arrivée doit etre superieur au temps départ</p>
+                 </div>
+        </fieldset>
+    </form>
+
+    
+    
+   </div>
+    
+   <script src="reservation.js"  ></script>
+</body>
+</html>
